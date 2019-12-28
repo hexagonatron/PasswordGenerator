@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+    <script src="https://kit.fontawesome.com/6213180c78.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="row"><h2>Simple Password Generator</h2></div>
+        <div class="row"><input type="text" name="Password" id="password-out"></div>
+        <div class="row"><span class="heading">Length</span><span class="len-group"><input type="range" name="length" id="len-slider" class="var" min="4" max="30" value="10"><input type="number" value="10" min="4" max="30" class="len-text"></span></div>
+        <div class="row"><span class="heading">Lowercase</span><input type="checkbox" name="Lowercase" id="lower-check" class="var" checked></div>
+        <div class="row"><span class="heading">Uppercase</span><input type="checkbox" name="Uppercase" id="upper-check" class="var" checked></div>
+        <div class="row"><span class="heading">Numbers</span><input type="checkbox" name="Numbers" id="num-check" class="var" checked></div>
+        <div class="row"><span class="heading">Symbols</span><input type="checkbox" name="Symbols" id="symbol-check" class="var" checked></div>
+    </div>
+
+    <script src="gen.js"></script>
+</body>
+</html>

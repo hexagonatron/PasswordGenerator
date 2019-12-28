@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: lightcyan;
+    padding: 30px;
+    border: 2px solid;
+    box-shadow: 10px 5px 5px lightslategrey ;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 7px;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#password-out   {
+    width: 100%;
+}
