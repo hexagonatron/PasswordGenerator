@@ -2,7 +2,7 @@
 
 A simple password generator
 
-##Future improvements
+## Future improvements
 * Styling
 * Refresh btn
 * Copy to clipboard button
