@@ -62,4 +62,16 @@ $(document).ready(() => {
         genPassword();
     })
 
+    $('#refresh').on("click", (e) => { //Refresh password button
+        genPassword();
+    })
+
+    $("#copy").on("click", (e) => { //copy toclipboard fn
+        var copyText = $('#password-out')[0];
+        copyText.select();
+        copyText.setSelectionRange(0,999);
+
+        document.execCommand("copy");
+    })
+
 });

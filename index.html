@@ -7,18 +7,52 @@
     <title>Password Generator</title>
     <script src="https://kit.fontawesome.com/6213180c78.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime|Kulim+Park:600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="container">
-        <div class="row"><h2>Simple Password Generator</h2></div>
-        <div class="row"><input type="text" name="Password" id="password-out"></div>
-        <div class="row"><span class="heading">Length</span><span class="len-group"><input type="range" name="length" id="len-slider" class="var" min="4" max="30" value="10"><input type="number" value="10" min="4" max="30" class="len-text"></span></div>
-        <div class="row"><span class="heading">Lowercase</span><input type="checkbox" name="Lowercase" id="lower-check" class="var" checked></div>
-        <div class="row"><span class="heading">Uppercase</span><input type="checkbox" name="Uppercase" id="upper-check" class="var" checked></div>
-        <div class="row"><span class="heading">Numbers</span><input type="checkbox" name="Numbers" id="num-check" class="var" checked></div>
-        <div class="row"><span class="heading">Symbols</span><input type="checkbox" name="Symbols" id="symbol-check" class="var" checked></div>
+        <div class="title"><h2>Simple Password Generator</h2></div>
+        <div class="row">
+            <input type="text" name="Password" id="password-out">
+            <span class="i-border"><i id="copy" class="far fa-copy"></i></span>
+            <span class="i-border"><i id="refresh" class="fas fa-sync-alt"></i></span>
+        </div>
+        <div class="row">
+            <span class="heading">Length</span>
+            <span class="len-group">
+                <input type="range" name="length" id="len-slider" class="var" min="4" max="30" value="10">
+                <input type="number" value="10" min="4" max="30" class="len-text">
+            </span>
+        </div>
+        <div class="row">
+            <span class="heading">Lowercase</span>
+            <label class="check-container">
+                <input type="checkbox" name="Lowercase" id="lower-check" class="var" checked> 
+                <span class="checkmark"> </span>
+            </label>
+        </div>
+        <div class="row">
+            <span class="heading">Uppercase</span>
+            <label class="check-container">
+                <input type="checkbox" name="Uppercase" id="upper-check" class="var" checked>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="row">
+            <span class="heading">Numbers</span>
+            <label class="check-container">
+                <input type="checkbox" name="Numbers" id="num-check" class="var" checked>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="row">
+            <span class="heading">Symbols</span>
+            <label class="check-container">
+                <input type="checkbox" name="Symbols" id="symbol-check" class="var" checked>
+                <span class="checkmark"></span>
+            </label>
+        </div>
     </div>
 
     <script src="gen.js"></script>
