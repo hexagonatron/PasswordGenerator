@@ -2,7 +2,4 @@
 
 A simple password generator
 
-## Future improvements
-* Styling
-* Refresh btn
-* Copy to clipboard button
+View [here](https://hexagonatron.github.io/PasswordGenerator/)
