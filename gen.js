@@ -1,6 +1,6 @@
 var genPassword = () => {
 
-    var charArray = []
+    var charArray = [];
     
     if ($('input:checkbox:checked').length == 0){ //If nothing checked, do nothing, output empty
         $('#password-out')[0].value = "";
@@ -27,20 +27,20 @@ var genPassword = () => {
 //fns to gen a random upper, lower, symbol etc
 
 var genUpper = () => {
-    return String.fromCharCode(Math.floor(Math.random() * 26 + 65))
+    return String.fromCharCode(Math.floor(Math.random() * 26 + 65));
 }
 
 var genLower = () => {
-    return String.fromCharCode(Math.floor(Math.random() * 26 + 97))
+    return String.fromCharCode(Math.floor(Math.random() * 26 + 97));
 }
 
 var genNum = () => {
-    return String.fromCharCode(Math.floor(Math.random() * 10 + 48))
+    return String.fromCharCode(Math.floor(Math.random() * 10 + 48));
 }
 
 var genSymb = () => {
-    const symb = "!@#$%^&*()-=+_?"
-    return symb[Math.floor(Math.random() * symb.length )]
+    const symb = "!@#$%^&*()-=+_?";
+    return symb[Math.floor(Math.random() * symb.length )];
 }
 
 $(document).ready(() => {
